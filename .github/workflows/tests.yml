@@ -1,5 +1,5 @@
 name: 💎API Tests
-run-name: Tests ${{ github.event.input.ENV} | ${{ github.event.input.MARKER }} marker | ${{ github.event.input.THREADS}} threads
+run-name: Tests ${{ github.event.input.HOST_URL} | ${{ github.event.input.MARKER }} marker | ${{ github.event.input.THREADS}} threads
 
 on:
   workflow_dispatch:
@@ -59,7 +59,10 @@ jobs:
       # Запуск тестов
       - name: Run tests via docker-compose
         env:
-          STAGE: ${{ secrets.STAGE }}
+          STAGE: ${{ secrets.HOST_URL }}
+          MARKER: ${{ github.event.inputs.MARKER }}
+          THREADS: ${{ github.event.inputs.THREADS }}
+        # Используем docker-compose для запуска тестов
         run: |
           docker compose up tests
 
@@ -74,8 +77,9 @@ jobs:
       # Шаг 5 - Генерация отчета
       - name: Generate Allure-report
         env:
-          BROWSER: ${{ inputs.BROWSER }}
-          STAGE: ${{ secrets.STAGE }}
+          STAGE: ${{ secrets.HOST_URL }}
+          MARKER: ${{ github.event.inputs.MARKER }}
+          THREADS: ${{ github.event.inputs.THREADS }}`
           CI_COMMIT_REF_NAME: ${{ github.ref_name }}
           CI_COMMIT_SHORT_SHA: ${{ github.sha }}
         run: |
