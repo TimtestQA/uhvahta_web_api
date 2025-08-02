@@ -21,8 +21,8 @@ env/
 
 # Test reports and logs
 reports/
-logs/
-*.log
+
+
 allure-results/
 allure-report/
 pytest_report.html
