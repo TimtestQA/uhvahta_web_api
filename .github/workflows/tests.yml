@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
     inputs:
       STAGE:
-        description: 'Host URL'
+        description: 'Choose environment'
         required: true
         default: 'https://stage.uhvahta.ru/web'
         type: environment
