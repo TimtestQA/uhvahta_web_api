@@ -12,7 +12,7 @@ services:
       - ./allure-results:/usr/workspace/allure-results
 
 
-    command: /bin/sh -c "HOST_URL=$$HOST_URL pytest -sv -o log_cli=true --alluredir=allure-results -m=auth"
+    command: /bin/sh -c "HOST_URL=$$HOST_URL pytest -sv -o log_cli=true -m=$$MARKER --alluredir=allure-results"
     environment:
       HOST_URL: ${HOST_URL}
       MARKER: ${MARKER:-auth}
