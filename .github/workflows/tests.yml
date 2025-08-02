@@ -77,7 +77,7 @@ jobs:
       # Шаг 5 - Генерация отчета
       - name: Generate Allure-report
         env:
-          STAGE: ${{ secrets.HOST_URL }}
+          STAGE: ${{ secrets.STAGE }}
           MARKER: ${{ github.event.inputs.MARKER }}
           THREADS: ${{ github.event.inputs.THREADS }}`
           CI_COMMIT_REF_NAME: ${{ github.ref_name }}
