@@ -1,10 +1,10 @@
 name: 💎API Tests
-run-name: Tests ${{ github.event.input.HOST_URL} | ${{ github.event.input.MARKER }} marker | ${{ github.event.input.THREADS}} threads
+run-name: Tests ${{ github.event.input.STAGE} | ${{ github.event.input.MARKER }} marker | ${{ github.event.input.THREADS}} threads
 
 on:
   workflow_dispatch:
     inputs:
-      HOST_URL:
+      STAGE:
         description: 'Host URL'
         required: true
         default: 'https://stage.uhvahta.ru/web'
