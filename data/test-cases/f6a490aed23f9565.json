@@ -1,0 +1,262 @@
+{
+  "uid" : "f6a490aed23f9565",
+  "name" : "Verify or continue - valid data",
+  "fullName" : "tests.test_auth.TestAuth#test_verify_or_continue",
+  "historyId" : "8f51353476676c4eed649266b452e676",
+  "time" : {
+    "start" : 1754288697163,
+    "stop" : 1754288698050,
+    "duration" : 887
+  },
+  "description" : "Test verify or continue endpoint with valid and invalid data.",
+  "descriptionHtml" : "<p>Test verify or continue endpoint with valid and invalid data.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth",
+    "time" : {
+      "start" : 1754288697162,
+      "stop" : 1754288697162,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754288697161,
+      "stop" : 1754288697162,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Test verify or continue endpoint with valid and invalid data.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Verify or continue",
+      "time" : {
+        "start" : 1754288697163,
+        "stop" : 1754288698050,
+        "duration" : 887
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ba08151d16298da3",
+        "name" : "request (json)",
+        "source" : "ba08151d16298da3.json",
+        "type" : "application/json",
+        "size" : 66
+      }, {
+        "uid" : "88c9dcd09fa45145",
+        "name" : "response",
+        "source" : "88c9dcd09fa45145.json",
+        "type" : "application/json",
+        "size" : 433
+      } ],
+      "parameters" : [ {
+        "name" : "data",
+        "value" : "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}"
+      }, {
+        "name" : "success",
+        "value" : "True"
+      } ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "865a94c3262a6396",
+      "name" : "log",
+      "source" : "865a94c3262a6396.txt",
+      "type" : "text/plain",
+      "size" : 656
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth::0",
+    "time" : {
+      "start" : 1754288698051,
+      "stop" : 1754288698051,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Auth"
+  }, {
+    "name" : "story",
+    "value" : "Authentication"
+  }, {
+    "name" : "tag",
+    "value" : "auth"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuth"
+  }, {
+    "name" : "host",
+    "value" : "d39f7656c562"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "True"
+  }, {
+    "name" : "payload",
+    "value" : "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 8,
+        "unknown" : 0,
+        "total" : 11
+      },
+      "items" : [ {
+        "uid" : "82eac0d88e221242",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754287308835,
+          "stop" : 1754287309949,
+          "duration" : 1114
+        }
+      }, {
+        "uid" : "63a77793eb03ec28",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754287113539,
+          "stop" : 1754287114562,
+          "duration" : 1023
+        }
+      }, {
+        "uid" : "70d7cee0dbb7a340",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754286191645,
+          "stop" : 1754286192404,
+          "duration" : 759
+        }
+      }, {
+        "uid" : "864c7f846f3dabde",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754285545023,
+          "stop" : 1754285549622,
+          "duration" : 4599
+        }
+      }, {
+        "uid" : "caed0438ffeefcf3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280618063,
+          "stop" : 1754280619014,
+          "duration" : 951
+        }
+      }, {
+        "uid" : "f34b6f4428010881",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754279907652,
+          "stop" : 1754279909168,
+          "duration" : 1516
+        }
+      }, {
+        "uid" : "a8304b4fd892f6a3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754279441853,
+          "stop" : 1754279442888,
+          "duration" : 1035
+        }
+      }, {
+        "uid" : "4a1f72dd5a65d086",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
+        "time" : {
+          "start" : 1754278939608,
+          "stop" : 1754278939611,
+          "duration" : 3
+        }
+      }, {
+        "uid" : "47d72601d5177ba7",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
+        "time" : {
+          "start" : 1754278243106,
+          "stop" : 1754278243108,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "3b42c9f06627ca94",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
+        "time" : {
+          "start" : 1754277805249,
+          "stop" : 1754277805252,
+          "duration" : 3
+        }
+      } ]
+    },
+    "tags" : [ "auth" ]
+  },
+  "source" : "f6a490aed23f9565.json",
+  "parameterValues" : [ "True", "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}" ]
+}
