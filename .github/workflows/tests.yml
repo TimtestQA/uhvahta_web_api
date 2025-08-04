@@ -62,16 +62,26 @@ jobs:
         run: |
           docker compose up users-api-test
         
-      - name: Commit and push logs
-        env:
-          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
-          REPO: ${{ github.repository }}
+      - name: 📁 Копируем старые логи
         run: |
-          git config --global user.name 'GitHub Action'
-          git config --global user.email 'action@github.com'
-          git add logs/api_requests.log
-          git commit -m "Update logs [skip ci]" || echo "No changes to commit"
-          git push https://x-access-token:${CI_TOKEN}@github.com/${REPO}.git HEAD:main
+          mkdir -p logs/history
+          if [ -f "./.github/gh-pages/logs/api_requests.log" ]; then
+            cp ./.github/gh-pages/logs/api_requests.log logs/history/
+          fi
+
+      - name: 📦 Готовим новые логи
+        run: |
+          
+          cat logs/history/api_requests.log >> logs/api_requests.log || true
+
+      - name: 🚀 Заливаем логи на GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          token: ${{ secrets.CI_TOKEN }}
+          branch: gh-pages
+          folder: logs
+          target-folder: logs
+          clean: false
 
       - name: Copy Allure history
         run: |
