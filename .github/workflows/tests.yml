@@ -77,7 +77,7 @@ jobs:
           cd ./.github/gh-pages
           git add logs/api_requests.log
           git commit -m "Update API logs [skip ci]" || echo "No changes to commit"
-          git push origin gh-pages
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/TimtestQA/uhvahta_web_api.git gh-pages
 
       - name: Copy Allure history
         run: |
