@@ -35,7 +35,7 @@ on:
           - '5'
 
 jobs:
-  ui-tests:
+  api-tests:
     runs-on: ubuntu-latest
     environment: ${{ inputs.ENV }}
 
@@ -65,8 +65,8 @@ jobs:
       - name: 📁 Копируем старые логи
         run: |
           mkdir -p logs/history
-          if [ -f "./.github/gh-pages/logs/api_requests.log" ]; then
-            cp ./.github/gh-pages/logs/api_requests.log logs/history/
+          if [ -f "./.github/main/logs/api_requests.log" ]; then
+            cp ./.github/main/logs/api_requests.log logs/history/
           fi
 
       - name: 📦 Готовим новые логи
@@ -78,7 +78,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
-          branch: gh-pages
+          branch: main
           folder: logs
           target-folder: logs
           clean: false
