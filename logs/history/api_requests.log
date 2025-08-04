@@ -1,3 +1,21 @@
+2025-08-04 05:32:25,023 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/verify-or-continue
+2025-08-04 05:32:29,621 - api_logger - INFO - ⬅️ Status: 200
+2025-08-04 05:32:29,621 - api_logger - INFO - Response: {'token_type': 'Bearer', 'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTQzNzE5NDl9.WxhZd8b6xErOTVIDkQz0HY9pvsSila0Z8wbLDph9khA', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY4Nzc1NDl9.EVeKdfb7CJpLT14MH2Oc9VoRy8HS6QLdAHmsnJ37ZGA', 'registered': True}
+2025-08-04 05:32:29,625 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/verify-or-continue
+2025-08-04 05:32:29,848 - api_logger - INFO - ⬅️ Status: 200
+2025-08-04 05:32:29,849 - api_logger - INFO - Response: {'registered': False}
+2025-08-04 05:32:29,852 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/send-otp
+2025-08-04 05:32:30,000 - api_logger - INFO - ⬅️ Status: 204
+2025-08-04 05:32:30,001 - api_logger - INFO - Response: No Content (204)
+2025-08-04 05:32:30,004 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/send-otp
+2025-08-04 05:32:30,152 - api_logger - INFO - ⬅️ Status: 422
+2025-08-04 05:32:30,152 - api_logger - INFO - Response: {'detail': [{'type': 'value_error', 'loc': ['body', 'email'], 'msg': 'value is not a valid email address: An email address must have an @-sign.', 'input': 'invalid-email', 'ctx': {'reason': 'An email address must have an @-sign.'}}]}
+2025-08-04 05:32:30,156 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/token/refresh
+2025-08-04 05:32:30,366 - api_logger - INFO - ⬅️ Status: 200
+2025-08-04 05:32:30,366 - api_logger - INFO - Response: {'token_type': 'Bearer', 'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTQzNzE5NTB9.kwIrqDWmEUSatxjxzETu4xdonvZZoSR_EMhQkJPp0Bc'}
+2025-08-04 05:32:30,370 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/token/refresh
+2025-08-04 05:32:30,518 - api_logger - INFO - ⬅️ Status: 401
+2025-08-04 05:32:30,519 - api_logger - INFO - Response: {'detail': 'Not enough segments'}
 2025-08-04 04:10:18,063 - api_logger - INFO - ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/verify-or-continue
 2025-08-04 04:10:19,012 - api_logger - INFO - ⬅️ Status: 200
 2025-08-04 04:10:19,012 - api_logger - INFO - Response: {'token_type': 'Bearer', 'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTQzNjcwMTh9.zbFsqcrbdQQluPdGyYXcYNr7ZrW9eg5zTyjw9Fp803c', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY4NzI2MTh9.X-v_RhP5gyXRbtvxmlCio1d_n8uMbAYES7wGKDYXJ2U', 'registered': True}
