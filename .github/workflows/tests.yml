@@ -35,7 +35,7 @@ on:
           - '5'
 
 jobs:
-  ui-tests:
+  api-tests:
     runs-on: ubuntu-latest
     environment: ${{ inputs.STAGE }}
 
