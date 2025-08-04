@@ -1,60 +1,60 @@
 [ {
-  "uid" : "e407ec5dfe47dfe9",
-  "name" : "Verify or continue - valid data",
-  "time" : {
-    "start" : 1754280619017,
-    "stop" : 1754280619155,
-    "duration" : 138
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "50730ea94a1ae968",
-  "name" : "Refresh token",
-  "time" : {
-    "start" : 1754280619568,
-    "stop" : 1754280619699,
-    "duration" : 131
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c430979f93a0f0b7",
+  "uid" : "9eba1ab109c137dd",
   "name" : "Send OTP",
   "time" : {
-    "start" : 1754280619292,
-    "stop" : 1754280619422,
-    "duration" : 130
+    "start" : 1754285550004,
+    "stop" : 1754285550153,
+    "duration" : 149
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a121a04e07a84dab",
+  "uid" : "280b2ad6a901d509",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754280619426,
-    "stop" : 1754280619565,
-    "duration" : 139
+    "start" : 1754285550371,
+    "stop" : 1754285550519,
+    "duration" : 148
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "caed0438ffeefcf3",
+  "uid" : "27b807db39778619",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754280618063,
-    "stop" : 1754280619014,
-    "duration" : 951
+    "start" : 1754285549625,
+    "stop" : 1754285549850,
+    "duration" : 225
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4756a2278f0b6de5",
+  "uid" : "bbd40f0e81877231",
   "name" : "Send OTP",
   "time" : {
-    "start" : 1754280619158,
-    "stop" : 1754280619289,
-    "duration" : 131
+    "start" : 1754285549852,
+    "stop" : 1754285550001,
+    "duration" : 149
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "864c7f846f3dabde",
+  "name" : "Verify or continue - valid data",
+  "time" : {
+    "start" : 1754285545023,
+    "stop" : 1754285549622,
+    "duration" : 4599
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "be4d6dccf941a68",
+  "name" : "Refresh token",
+  "time" : {
+    "start" : 1754285550156,
+    "stop" : 1754285550368,
+    "duration" : 212
   },
   "status" : "passed",
   "severity" : "normal"

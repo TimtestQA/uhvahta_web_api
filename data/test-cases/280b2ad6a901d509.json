@@ -1,0 +1,224 @@
+{
+  "uid" : "280b2ad6a901d509",
+  "name" : "Refresh token",
+  "fullName" : "tests.test_auth.TestAuth#test_refresh_token",
+  "historyId" : "048371c5be402785ab2aa8f70e976b19",
+  "time" : {
+    "start" : 1754285550371,
+    "stop" : 1754285550519,
+    "duration" : 148
+  },
+  "description" : "Test refresh token endpoint.",
+  "descriptionHtml" : "<p>Test refresh token endpoint.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754285545021,
+      "stop" : 1754285545022,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAuth",
+    "time" : {
+      "start" : 1754285550370,
+      "stop" : 1754285550370,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Test refresh token endpoint.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Refresh token",
+      "time" : {
+        "start" : 1754285550371,
+        "stop" : 1754285550519,
+        "duration" : 148
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "102c3cde4008bc0d",
+        "name" : "request (json)",
+        "source" : "102c3cde4008bc0d.json",
+        "type" : "application/json",
+        "size" : 48
+      } ],
+      "parameters" : [ {
+        "name" : "refresh_token",
+        "value" : "'invalid_refresh_token'"
+      }, {
+        "name" : "success",
+        "value" : "False"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "b0d4bf9c6e310089",
+      "name" : "log",
+      "source" : "b0d4bf9c6e310089.txt",
+      "type" : "text/plain",
+      "size" : 269
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth::0",
+    "time" : {
+      "start" : 1754285550520,
+      "stop" : 1754285550520,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Auth"
+  }, {
+    "name" : "story",
+    "value" : "Authentication"
+  }, {
+    "name" : "tag",
+    "value" : "auth"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuth"
+  }, {
+    "name" : "host",
+    "value" : "d960347976bd"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "False"
+  }, {
+    "name" : "refresh_token",
+    "value" : "'invalid_refresh_token'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 7
+      },
+      "items" : [ {
+        "uid" : "50730ea94a1ae968",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280619568,
+          "stop" : 1754280619699,
+          "duration" : 131
+        }
+      }, {
+        "uid" : "b3369890a932ba8c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754279909941,
+          "stop" : 1754279910126,
+          "duration" : 185
+        }
+      }, {
+        "uid" : "eadda381eda50b1e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754279443554,
+          "stop" : 1754279443684,
+          "duration" : 130
+        }
+      }, {
+        "uid" : "3d00c614e92e8a57",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+        "time" : {
+          "start" : 1754278939810,
+          "stop" : 1754278939811,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "7c1063fe4f26480",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+        "time" : {
+          "start" : 1754278243309,
+          "stop" : 1754278243311,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "8bccb7263c74f275",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+        "time" : {
+          "start" : 1754277805440,
+          "stop" : 1754277805441,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "auth" ]
+  },
+  "source" : "280b2ad6a901d509.json",
+  "parameterValues" : [ "False", "'invalid_refresh_token'" ]
+}
