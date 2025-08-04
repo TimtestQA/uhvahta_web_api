@@ -2,13 +2,22 @@
   "8f51353476676c4eed649266b452e676" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "4a1f72dd5a65d086",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
+      "time" : {
+        "start" : 1754278939608,
+        "stop" : 1754278939611,
+        "duration" : 3
+      }
+    }, {
       "uid" : "47d72601d5177ba7",
       "status" : "broken",
       "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
@@ -31,13 +40,22 @@
   "a7980f8fa59964950d3d067ba7162304" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "43950bf9368617f9",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+      "time" : {
+        "start" : 1754278939711,
+        "stop" : 1754278939712,
+        "duration" : 1
+      }
+    }, {
       "uid" : "ab94f6994c7203ac",
       "status" : "broken",
       "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
@@ -60,13 +78,22 @@
   "929f8ca34ff32d334501adc431d167fa" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "2e2ae49c68acd5c2",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+      "time" : {
+        "start" : 1754278939777,
+        "stop" : 1754278939779,
+        "duration" : 2
+      }
+    }, {
       "uid" : "ceea3453f4311c42",
       "status" : "broken",
       "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
@@ -89,13 +116,22 @@
   "6fefcbbb4c8183e7f968e319be8fe159" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "9c602f10cef7065b",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+      "time" : {
+        "start" : 1754278939744,
+        "stop" : 1754278939745,
+        "duration" : 1
+      }
+    }, {
       "uid" : "b36097c9595e797a",
       "status" : "broken",
       "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
@@ -118,13 +154,22 @@
   "db2833fe1a701fb8942abfa3aa5e1ef5" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "ee494aa3d3b58d9f",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
+      "time" : {
+        "start" : 1754278939677,
+        "stop" : 1754278939678,
+        "duration" : 1
+      }
+    }, {
       "uid" : "2a71c3bd3b785d87",
       "status" : "broken",
       "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
@@ -147,13 +192,22 @@
   "048371c5be402785ab2aa8f70e976b19" : {
     "statistic" : {
       "failed" : 0,
-      "broken" : 2,
+      "broken" : 3,
       "skipped" : 0,
       "passed" : 0,
       "unknown" : 0,
-      "total" : 2
+      "total" : 3
     },
     "items" : [ {
+      "uid" : "3d00c614e92e8a57",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+      "time" : {
+        "start" : 1754278939810,
+        "stop" : 1754278939811,
+        "duration" : 1
+      }
+    }, {
       "uid" : "7c1063fe4f26480",
       "status" : "broken",
       "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",

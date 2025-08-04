@@ -1,59 +1,59 @@
 [ {
-  "uid" : "2a71c3bd3b785d87",
+  "uid" : "2e2ae49c68acd5c2",
+  "name" : "Refresh token",
+  "time" : {
+    "start" : 1754278939777,
+    "stop" : 1754278939779,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ee494aa3d3b58d9f",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754278243173,
-    "stop" : 1754278243174,
+    "start" : 1754278939677,
+    "stop" : 1754278939678,
     "duration" : 1
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "7c1063fe4f26480",
-  "name" : "Refresh token",
+  "uid" : "43950bf9368617f9",
+  "name" : "Send OTP",
   "time" : {
-    "start" : 1754278243309,
-    "stop" : 1754278243311,
-    "duration" : 2
+    "start" : 1754278939711,
+    "stop" : 1754278939712,
+    "duration" : 1
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "47d72601d5177ba7",
+  "uid" : "4a1f72dd5a65d086",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754278243106,
-    "stop" : 1754278243108,
-    "duration" : 2
+    "start" : 1754278939608,
+    "stop" : 1754278939611,
+    "duration" : 3
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "ab94f6994c7203ac",
+  "uid" : "9c602f10cef7065b",
   "name" : "Send OTP",
   "time" : {
-    "start" : 1754278243206,
-    "stop" : 1754278243208,
-    "duration" : 2
+    "start" : 1754278939744,
+    "stop" : 1754278939745,
+    "duration" : 1
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "ceea3453f4311c42",
+  "uid" : "3d00c614e92e8a57",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754278243275,
-    "stop" : 1754278243277,
-    "duration" : 2
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "b36097c9595e797a",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754278243241,
-    "stop" : 1754278243242,
+    "start" : 1754278939810,
+    "stop" : 1754278939811,
     "duration" : 1
   },
   "status" : "broken",

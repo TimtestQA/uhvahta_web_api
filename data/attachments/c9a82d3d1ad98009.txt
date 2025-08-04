@@ -1,0 +1,1 @@
+[32mINFO    [0m api_logger:api_client.py:26 ➡️ POST - /api/v1/auth/token/refresh
