@@ -6,25 +6,25 @@
       "name" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/verify-or-continue': No scheme supplied. Perhaps you meant https:///api/v1/auth/verify-or-continue?",
       "children" : [ {
         "name" : "Verify or continue - valid data",
-        "uid" : "3b42c9f06627ca94",
+        "uid" : "47d72601d5177ba7",
         "parentUid" : "7cd2330599f9fd122b3a53876ecdeb0d",
         "status" : "broken",
         "time" : {
-          "start" : 1754277805249,
-          "stop" : 1754277805252,
-          "duration" : 3
+          "start" : 1754278243106,
+          "stop" : 1754278243108,
+          "duration" : 2
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "True", "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}" ]
       }, {
         "name" : "Verify or continue - valid data",
-        "uid" : "5a6b055bdae1fcd8",
+        "uid" : "2a71c3bd3b785d87",
         "parentUid" : "7cd2330599f9fd122b3a53876ecdeb0d",
         "status" : "broken",
         "time" : {
-          "start" : 1754277805313,
-          "stop" : 1754277805314,
+          "start" : 1754278243173,
+          "stop" : 1754278243174,
           "duration" : 1
         },
         "flaky" : false,
@@ -36,26 +36,26 @@
       "name" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
       "children" : [ {
         "name" : "Send OTP",
-        "uid" : "270c89be091b5ba0",
+        "uid" : "ab94f6994c7203ac",
         "parentUid" : "e59f2c91c28e26c5f31bdfb6075f089c",
         "status" : "broken",
         "time" : {
-          "start" : 1754277805345,
-          "stop" : 1754277805346,
-          "duration" : 1
+          "start" : 1754278243206,
+          "stop" : 1754278243208,
+          "duration" : 2
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "'freevoodoo@yandex.com'", "True" ]
       }, {
         "name" : "Send OTP",
-        "uid" : "804276501e1f6f87",
+        "uid" : "b36097c9595e797a",
         "parentUid" : "e59f2c91c28e26c5f31bdfb6075f089c",
         "status" : "broken",
         "time" : {
-          "start" : 1754277805376,
-          "stop" : 1754277805378,
-          "duration" : 2
+          "start" : 1754278243241,
+          "stop" : 1754278243242,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
@@ -66,12 +66,12 @@
       "name" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
       "children" : [ {
         "name" : "Refresh token",
-        "uid" : "3e394a90318c2e1a",
+        "uid" : "ceea3453f4311c42",
         "parentUid" : "8e2e47fcc863731dce78b2acd47dcbeb",
         "status" : "broken",
         "time" : {
-          "start" : 1754277805408,
-          "stop" : 1754277805410,
+          "start" : 1754278243275,
+          "stop" : 1754278243277,
           "duration" : 2
         },
         "flaky" : false,
@@ -79,13 +79,13 @@
         "parameters" : [ "True", "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY1NjU5MjB9.1KsIp2KDeYFSDsCAGeoPzRUDpP7Lk5xw0-D345Y3mfI'" ]
       }, {
         "name" : "Refresh token",
-        "uid" : "8bccb7263c74f275",
+        "uid" : "7c1063fe4f26480",
         "parentUid" : "8e2e47fcc863731dce78b2acd47dcbeb",
         "status" : "broken",
         "time" : {
-          "start" : 1754277805440,
-          "stop" : 1754277805441,
-          "duration" : 1
+          "start" : 1754278243309,
+          "stop" : 1754278243311,
+          "duration" : 2
         },
         "flaky" : false,
         "newFailed" : false,

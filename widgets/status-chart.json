@@ -1,60 +1,60 @@
 [ {
-  "uid" : "3e394a90318c2e1a",
+  "uid" : "2a71c3bd3b785d87",
+  "name" : "Verify or continue - valid data",
+  "time" : {
+    "start" : 1754278243173,
+    "stop" : 1754278243174,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7c1063fe4f26480",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754277805408,
-    "stop" : 1754277805410,
+    "start" : 1754278243309,
+    "stop" : 1754278243311,
     "duration" : 2
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "270c89be091b5ba0",
-  "name" : "Send OTP",
+  "uid" : "47d72601d5177ba7",
+  "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754277805345,
-    "stop" : 1754277805346,
-    "duration" : 1
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "804276501e1f6f87",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754277805376,
-    "stop" : 1754277805378,
+    "start" : 1754278243106,
+    "stop" : 1754278243108,
     "duration" : 2
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "8bccb7263c74f275",
+  "uid" : "ab94f6994c7203ac",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754278243206,
+    "stop" : 1754278243208,
+    "duration" : 2
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "ceea3453f4311c42",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754277805440,
-    "stop" : 1754277805441,
-    "duration" : 1
+    "start" : 1754278243275,
+    "stop" : 1754278243277,
+    "duration" : 2
   },
   "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "5a6b055bdae1fcd8",
-  "name" : "Verify or continue - valid data",
+  "uid" : "b36097c9595e797a",
+  "name" : "Send OTP",
   "time" : {
-    "start" : 1754277805313,
-    "stop" : 1754277805314,
+    "start" : 1754278243241,
+    "stop" : 1754278243242,
     "duration" : 1
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "3b42c9f06627ca94",
-  "name" : "Verify or continue - valid data",
-  "time" : {
-    "start" : 1754277805249,
-    "stop" : 1754277805252,
-    "duration" : 3
   },
   "status" : "broken",
   "severity" : "normal"

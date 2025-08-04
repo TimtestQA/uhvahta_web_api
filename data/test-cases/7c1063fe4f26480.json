@@ -1,0 +1,192 @@
+{
+  "uid" : "7c1063fe4f26480",
+  "name" : "Refresh token",
+  "fullName" : "tests.test_auth.TestAuth#test_refresh_token",
+  "historyId" : "048371c5be402785ab2aa8f70e976b19",
+  "time" : {
+    "start" : 1754278243309,
+    "stop" : 1754278243311,
+    "duration" : 2
+  },
+  "description" : "Test refresh token endpoint.",
+  "descriptionHtml" : "<p>Test refresh token endpoint.</p>\n",
+  "status" : "broken",
+  "statusMessage" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+  "statusTrace" : "self = <test_auth.TestAuth object at 0x7fe31ef7e150>\nrefresh_token = 'invalid_refresh_token', expected = False\n\n    @allure.title(\"Refresh token\")\n    @pytest.mark.parametrize(\"refresh_token, expected\", [\n        pytest.param(Payloads.valid_refresh_token(), True, id=\"valid token\"),\n        pytest.param(Payloads.invalid_refresh_token(), False, id=\"invalid token\"),\n    ])\n    @pytest.mark.auth\n    def test_refresh_token(self, refresh_token, expected):\n        \"\"\"Test refresh token endpoint.\"\"\"\n>       response = self.auth_api.refresh_token(refresh_token=refresh_token, success=expected)\n\ntests/test_auth.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/auth/api.py:49: in refresh_token\n    response = self.client.post(\nclient/api_client.py:103: in post\n    response = self._request(\"post\", endpoint, json=json, data=data, headers=headers, files=files, success=success)\nclient/api_client.py:59: in _request\n    response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n../local/lib/python3.12/site-packages/requests/sessions.py:575: in request\n    prep = self.prepare_request(req)\n../local/lib/python3.12/site-packages/requests/sessions.py:484: in prepare_request\n    p.prepare(\n../local/lib/python3.12/site-packages/requests/models.py:367: in prepare\n    self.prepare_url(url, params)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>, url = '/api/v1/auth/token/refresh'\nparams = OrderedDict()\n\n    def prepare_url(self, url, params):\n        \"\"\"Prepares the given HTTP URL.\"\"\"\n        #: Accept objects that have string representations.\n        #: We're unable to blindly call unicode/str functions\n        #: as this will include the bytestring indicator (b'')\n        #: on python 3.x.\n        #: https://github.com/psf/requests/pull/2238\n        if isinstance(url, bytes):\n            url = url.decode(\"utf8\")\n        else:\n            url = str(url)\n    \n        # Remove leading whitespaces from url\n        url = url.lstrip()\n    \n        # Don't do any URL preparation for non-HTTP schemes like `mailto`,\n        # `data` etc to work around exceptions from `url_parse`, which\n        # handles RFC 3986 only.\n        if \":\" in url and not url.lower().startswith(\"http\"):\n            self.url = url\n            return\n    \n        # Support for unicode domain names and paths.\n        try:\n            scheme, auth, host, port, path, query, fragment = parse_url(url)\n        except LocationParseError as e:\n            raise InvalidURL(*e.args)\n    \n        if not scheme:\n>           raise MissingSchema(\n                f\"Invalid URL {url!r}: No scheme supplied. \"\n                f\"Perhaps you meant https://{url}?\"\n            )\nE           requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?\n\n../local/lib/python3.12/site-packages/requests/models.py:438: MissingSchema",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754278243103,
+      "stop" : 1754278243105,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestAuth",
+    "time" : {
+      "start" : 1754278243309,
+      "stop" : 1754278243309,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "description" : "Test refresh token endpoint.",
+    "status" : "broken",
+    "statusMessage" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+    "statusTrace" : "self = <test_auth.TestAuth object at 0x7fe31ef7e150>\nrefresh_token = 'invalid_refresh_token', expected = False\n\n    @allure.title(\"Refresh token\")\n    @pytest.mark.parametrize(\"refresh_token, expected\", [\n        pytest.param(Payloads.valid_refresh_token(), True, id=\"valid token\"),\n        pytest.param(Payloads.invalid_refresh_token(), False, id=\"invalid token\"),\n    ])\n    @pytest.mark.auth\n    def test_refresh_token(self, refresh_token, expected):\n        \"\"\"Test refresh token endpoint.\"\"\"\n>       response = self.auth_api.refresh_token(refresh_token=refresh_token, success=expected)\n\ntests/test_auth.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/auth/api.py:49: in refresh_token\n    response = self.client.post(\nclient/api_client.py:103: in post\n    response = self._request(\"post\", endpoint, json=json, data=data, headers=headers, files=files, success=success)\nclient/api_client.py:59: in _request\n    response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n../local/lib/python3.12/site-packages/requests/sessions.py:575: in request\n    prep = self.prepare_request(req)\n../local/lib/python3.12/site-packages/requests/sessions.py:484: in prepare_request\n    p.prepare(\n../local/lib/python3.12/site-packages/requests/models.py:367: in prepare\n    self.prepare_url(url, params)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <PreparedRequest [POST]>, url = '/api/v1/auth/token/refresh'\nparams = OrderedDict()\n\n    def prepare_url(self, url, params):\n        \"\"\"Prepares the given HTTP URL.\"\"\"\n        #: Accept objects that have string representations.\n        #: We're unable to blindly call unicode/str functions\n        #: as this will include the bytestring indicator (b'')\n        #: on python 3.x.\n        #: https://github.com/psf/requests/pull/2238\n        if isinstance(url, bytes):\n            url = url.decode(\"utf8\")\n        else:\n            url = str(url)\n    \n        # Remove leading whitespaces from url\n        url = url.lstrip()\n    \n        # Don't do any URL preparation for non-HTTP schemes like `mailto`,\n        # `data` etc to work around exceptions from `url_parse`, which\n        # handles RFC 3986 only.\n        if \":\" in url and not url.lower().startswith(\"http\"):\n            self.url = url\n            return\n    \n        # Support for unicode domain names and paths.\n        try:\n            scheme, auth, host, port, path, query, fragment = parse_url(url)\n        except LocationParseError as e:\n            raise InvalidURL(*e.args)\n    \n        if not scheme:\n>           raise MissingSchema(\n                f\"Invalid URL {url!r}: No scheme supplied. \"\n                f\"Perhaps you meant https://{url}?\"\n            )\nE           requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?\n\n../local/lib/python3.12/site-packages/requests/models.py:438: MissingSchema",
+    "steps" : [ {
+      "name" : "Refresh token",
+      "time" : {
+        "start" : 1754278243310,
+        "stop" : 1754278243310,
+        "duration" : 0
+      },
+      "status" : "broken",
+      "statusMessage" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/services/auth/api.py\", line 49, in refresh_token\n    response = self.client.post(\n               ^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/client/api_client.py\", line 103, in post\n    response = self._request(\"post\", endpoint, json=json, data=data, headers=headers, files=files, success=success)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/client/api_client.py\", line 59, in _request\n    response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/requests/sessions.py\", line 575, in request\n    prep = self.prepare_request(req)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/site-packages/requests/sessions.py\", line 484, in prepare_request\n    p.prepare(\n  File \"/usr/local/lib/python3.12/site-packages/requests/models.py\", line 367, in prepare\n    self.prepare_url(url, params)\n  File \"/usr/local/lib/python3.12/site-packages/requests/models.py\", line 438, in prepare_url\n    raise MissingSchema(\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a85e478d87eb75ff",
+        "name" : "request (json)",
+        "source" : "a85e478d87eb75ff.json",
+        "type" : "application/json",
+        "size" : 48
+      } ],
+      "parameters" : [ {
+        "name" : "refresh_token",
+        "value" : "'invalid_refresh_token'"
+      }, {
+        "name" : "success",
+        "value" : "False"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ {
+      "uid" : "f8227f7408176c30",
+      "name" : "log",
+      "source" : "f8227f7408176c30.txt",
+      "type" : "text/plain",
+      "size" : 86
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 1
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth::0",
+    "time" : {
+      "start" : 1754278243342,
+      "stop" : 1754278243342,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Authentication"
+  }, {
+    "name" : "epic",
+    "value" : "Auth"
+  }, {
+    "name" : "tag",
+    "value" : "auth"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuth"
+  }, {
+    "name" : "host",
+    "value" : "4023af66aa89"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "False"
+  }, {
+    "name" : "refresh_token",
+    "value" : "'invalid_refresh_token'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 2,
+        "skipped" : 0,
+        "passed" : 0,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8bccb7263c74f275",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/token/refresh': No scheme supplied. Perhaps you meant https:///api/v1/auth/token/refresh?",
+        "time" : {
+          "start" : 1754277805440,
+          "stop" : 1754277805441,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "auth" ]
+  },
+  "source" : "7c1063fe4f26480.json",
+  "parameterValues" : [ "False", "'invalid_refresh_token'" ]
+}
