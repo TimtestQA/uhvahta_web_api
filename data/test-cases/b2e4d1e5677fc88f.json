@@ -1,0 +1,280 @@
+{
+  "uid" : "b2e4d1e5677fc88f",
+  "name" : "Send OTP",
+  "fullName" : "tests.test_auth.TestAuth#test_send_otp",
+  "historyId" : "a7980f8fa59964950d3d067ba7162304",
+  "time" : {
+    "start" : 1754299158024,
+    "stop" : 1754299158222,
+    "duration" : 198
+  },
+  "description" : "Test send OTP endpoint.",
+  "descriptionHtml" : "<p>Test send OTP endpoint.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth",
+    "time" : {
+      "start" : 1754299158023,
+      "stop" : 1754299158023,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754299155550,
+      "stop" : 1754299155551,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Test send OTP endpoint.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Send OTP",
+      "time" : {
+        "start" : 1754299158024,
+        "stop" : 1754299158222,
+        "duration" : 198
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "63acbae7b2525f2d",
+        "name" : "request (json)",
+        "source" : "63acbae7b2525f2d.json",
+        "type" : "application/json",
+        "size" : 40
+      } ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'freevoodoo@yandex.com'"
+      }, {
+        "name" : "success",
+        "value" : "True"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "8d2c5793a5301620",
+      "name" : "log",
+      "source" : "8d2c5793a5301620.txt",
+      "type" : "text/plain",
+      "size" : 247
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth::0",
+    "time" : {
+      "start" : 1754299158223,
+      "stop" : 1754299158223,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "Auth"
+  }, {
+    "name" : "story",
+    "value" : "Authentication"
+  }, {
+    "name" : "tag",
+    "value" : "auth"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuth"
+  }, {
+    "name" : "host",
+    "value" : "e90b600a7f19"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "email",
+    "value" : "'freevoodoo@yandex.com'"
+  }, {
+    "name" : "expected",
+    "value" : "True"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 11,
+        "unknown" : 0,
+        "total" : 14
+      },
+      "items" : [ {
+        "uid" : "f963fc3e22c06ed8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754298315337,
+          "stop" : 1754298315534,
+          "duration" : 197
+        }
+      }, {
+        "uid" : "d6b3cb5252f40854",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754289516322,
+          "stop" : 1754289516475,
+          "duration" : 153
+        }
+      }, {
+        "uid" : "2760c7302a637f6c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754288698270,
+          "stop" : 1754288698419,
+          "duration" : 149
+        }
+      }, {
+        "uid" : "7a608425a89ee629",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754287310146,
+          "stop" : 1754287310324,
+          "duration" : 178
+        }
+      }, {
+        "uid" : "39816b4816690fd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754287114782,
+          "stop" : 1754287114929,
+          "duration" : 147
+        }
+      }, {
+        "uid" : "d496a9de12ddff32",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754286192602,
+          "stop" : 1754286192785,
+          "duration" : 183
+        }
+      }, {
+        "uid" : "bbd40f0e81877231",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754285549852,
+          "stop" : 1754285550001,
+          "duration" : 149
+        }
+      }, {
+        "uid" : "4756a2278f0b6de5",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280619158,
+          "stop" : 1754280619289,
+          "duration" : 131
+        }
+      }, {
+        "uid" : "c1578046acf930ad",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754279909367,
+          "stop" : 1754279909551,
+          "duration" : 184
+        }
+      }, {
+        "uid" : "6223f5f36611454d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754279443092,
+          "stop" : 1754279443223,
+          "duration" : 131
+        }
+      }, {
+        "uid" : "43950bf9368617f9",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+        "time" : {
+          "start" : 1754278939711,
+          "stop" : 1754278939712,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "ab94f6994c7203ac",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+        "time" : {
+          "start" : 1754278243206,
+          "stop" : 1754278243208,
+          "duration" : 2
+        }
+      }, {
+        "uid" : "270c89be091b5ba0",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+        "time" : {
+          "start" : 1754277805345,
+          "stop" : 1754277805346,
+          "duration" : 1
+        }
+      } ]
+    },
+    "tags" : [ "auth" ]
+  },
+  "source" : "b2e4d1e5677fc88f.json",
+  "parameterValues" : [ "'freevoodoo@yandex.com'", "True" ]
+}

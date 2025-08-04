@@ -1,60 +1,60 @@
 [ {
-  "uid" : "160507b6c8ff974",
+  "uid" : "17bf1e58a75c0b57",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754298315946,
-    "stop" : 1754298316143,
-    "duration" : 197
+    "start" : 1754299158638,
+    "stop" : 1754299158839,
+    "duration" : 201
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c311912e5a12c18e",
-  "name" : "Verify or continue - valid data",
-  "time" : {
-    "start" : 1754298315128,
-    "stop" : 1754298315334,
-    "duration" : 206
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a72abbefc52ed2e8",
+  "uid" : "b2e4d1e5677fc88f",
   "name" : "Send OTP",
   "time" : {
-    "start" : 1754298315537,
-    "stop" : 1754298315735,
+    "start" : 1754299158024,
+    "stop" : 1754299158222,
     "duration" : 198
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f963fc3e22c06ed8",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754298315337,
-    "stop" : 1754298315534,
-    "duration" : 197
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5b52d7d98b5950bc",
+  "uid" : "91409c39d9fee97d",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754298313666,
-    "stop" : 1754298315125,
-    "duration" : 1459
+    "start" : 1754299155552,
+    "stop" : 1754299157813,
+    "duration" : 2261
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b861a8ad99ea4e0d",
+  "uid" : "148d37327e3b9b1b",
+  "name" : "Verify or continue - valid data",
+  "time" : {
+    "start" : 1754299157815,
+    "stop" : 1754299158021,
+    "duration" : 206
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3678a1199381c445",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754299158225,
+    "stop" : 1754299158425,
+    "duration" : 200
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5afbae70476c3",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754298315737,
-    "stop" : 1754298315944,
-    "duration" : 207
+    "start" : 1754299158428,
+    "stop" : 1754299158636,
+    "duration" : 208
   },
   "status" : "passed",
   "severity" : "normal"
