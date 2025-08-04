@@ -1,60 +1,60 @@
 [ {
-  "uid" : "fb811464a6ae44f9",
+  "uid" : "a660ffcf3da37152",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754287115088,
-    "stop" : 1754287115295,
-    "duration" : 207
+    "start" : 1754287310508,
+    "stop" : 1754287310693,
+    "duration" : 185
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "89248b3d16ab677f",
+  "uid" : "a9a1cd10206aecd8",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754287114565,
-    "stop" : 1754287114779,
-    "duration" : 214
+    "start" : 1754287309952,
+    "stop" : 1754287310144,
+    "duration" : 192
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6afeaa9bae022a3e",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754287114931,
-    "stop" : 1754287115085,
-    "duration" : 154
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "63a77793eb03ec28",
-  "name" : "Verify or continue - valid data",
-  "time" : {
-    "start" : 1754287113539,
-    "stop" : 1754287114562,
-    "duration" : 1023
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "39816b4816690fd",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754287114782,
-    "stop" : 1754287114929,
-    "duration" : 147
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ed35aac5a2a85c13",
+  "uid" : "564ae5d303782cee",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754287115298,
-    "stop" : 1754287115445,
-    "duration" : 147
+    "start" : 1754287310695,
+    "stop" : 1754287310873,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b03c5438bc817a04",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754287310327,
+    "stop" : 1754287310505,
+    "duration" : 178
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "82eac0d88e221242",
+  "name" : "Verify or continue - valid data",
+  "time" : {
+    "start" : 1754287308835,
+    "stop" : 1754287309949,
+    "duration" : 1114
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "7a608425a89ee629",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754287310146,
+    "stop" : 1754287310324,
+    "duration" : 178
   },
   "status" : "passed",
   "severity" : "normal"

@@ -1,91 +1,91 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "1747070fbd30",
+    "name" : "f7d12972e37d",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
-        "name" : "Send OTP",
-        "uid" : "6afeaa9bae022a3e",
-        "parentUid" : "6631336a816bff26e9f8e58c465c578a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1754287114931,
-          "stop" : 1754287115085,
-          "duration" : 154
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'invalid-email'", "False" ]
-      }, {
         "name" : "Verify or continue - valid data",
-        "uid" : "63a77793eb03ec28",
-        "parentUid" : "6631336a816bff26e9f8e58c465c578a",
+        "uid" : "82eac0d88e221242",
+        "parentUid" : "b520e35f2dd96c60578d5bbd34de190c",
         "status" : "passed",
         "time" : {
-          "start" : 1754287113539,
-          "stop" : 1754287114562,
-          "duration" : 1023
+          "start" : 1754287308835,
+          "stop" : 1754287309949,
+          "duration" : 1114
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "True", "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}" ]
       }, {
-        "name" : "Send OTP",
-        "uid" : "39816b4816690fd",
-        "parentUid" : "6631336a816bff26e9f8e58c465c578a",
-        "status" : "passed",
-        "time" : {
-          "start" : 1754287114782,
-          "stop" : 1754287114929,
-          "duration" : 147
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "'freevoodoo@yandex.com'", "True" ]
-      }, {
         "name" : "Refresh token",
-        "uid" : "ed35aac5a2a85c13",
-        "parentUid" : "6631336a816bff26e9f8e58c465c578a",
+        "uid" : "564ae5d303782cee",
+        "parentUid" : "b520e35f2dd96c60578d5bbd34de190c",
         "status" : "passed",
         "time" : {
-          "start" : 1754287115298,
-          "stop" : 1754287115445,
-          "duration" : 147
+          "start" : 1754287310695,
+          "stop" : 1754287310873,
+          "duration" : 178
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "False", "'invalid_refresh_token'" ]
       }, {
-        "name" : "Refresh token",
-        "uid" : "fb811464a6ae44f9",
-        "parentUid" : "6631336a816bff26e9f8e58c465c578a",
+        "name" : "Send OTP",
+        "uid" : "b03c5438bc817a04",
+        "parentUid" : "b520e35f2dd96c60578d5bbd34de190c",
         "status" : "passed",
         "time" : {
-          "start" : 1754287115088,
-          "stop" : 1754287115295,
-          "duration" : 207
+          "start" : 1754287310327,
+          "stop" : 1754287310505,
+          "duration" : 178
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "True", "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY1NjU5MjB9.1KsIp2KDeYFSDsCAGeoPzRUDpP7Lk5xw0-D345Y3mfI'" ]
+        "parameters" : [ "'invalid-email'", "False" ]
       }, {
-        "name" : "Verify or continue - valid data",
-        "uid" : "89248b3d16ab677f",
-        "parentUid" : "6631336a816bff26e9f8e58c465c578a",
+        "name" : "Send OTP",
+        "uid" : "7a608425a89ee629",
+        "parentUid" : "b520e35f2dd96c60578d5bbd34de190c",
         "status" : "passed",
         "time" : {
-          "start" : 1754287114565,
-          "stop" : 1754287114779,
-          "duration" : 214
+          "start" : 1754287310146,
+          "stop" : 1754287310324,
+          "duration" : 178
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'freevoodoo@yandex.com'", "True" ]
+      }, {
+        "name" : "Verify or continue - valid data",
+        "uid" : "a9a1cd10206aecd8",
+        "parentUid" : "b520e35f2dd96c60578d5bbd34de190c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754287309952,
+          "stop" : 1754287310144,
+          "duration" : 192
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "True", "{'email': 'nonregitr@nonmail.ru', 'otp_code': '000000'}" ]
+      }, {
+        "name" : "Refresh token",
+        "uid" : "a660ffcf3da37152",
+        "parentUid" : "b520e35f2dd96c60578d5bbd34de190c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754287310508,
+          "stop" : 1754287310693,
+          "duration" : 185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "True", "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY1NjU5MjB9.1KsIp2KDeYFSDsCAGeoPzRUDpP7Lk5xw0-D345Y3mfI'" ]
       } ],
-      "uid" : "6631336a816bff26e9f8e58c465c578a"
+      "uid" : "b520e35f2dd96c60578d5bbd34de190c"
     } ],
-    "uid" : "052d38b74595ad91e31ed85c4dd542d1"
+    "uid" : "909e31e616e9e748900c1ac7e069a3bb"
   } ],
   "name" : "timeline"
 }
