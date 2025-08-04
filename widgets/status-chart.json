@@ -1,31 +1,61 @@
 [ {
-  "uid" : "1c58f6f3c2155b35",
-  "name" : "Get tariffs",
+  "uid" : "e407ec5dfe47dfe9",
+  "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754280348021,
-    "stop" : 1754280348201,
-    "duration" : 180
-  },
-  "status" : "failed",
-  "severity" : "normal"
-}, {
-  "uid" : "ca5cf3935984b82e",
-  "name" : "Get recruiter profile",
-  "time" : {
-    "start" : 1754280347831,
-    "stop" : 1754280348018,
-    "duration" : 187
+    "start" : 1754280619017,
+    "stop" : 1754280619155,
+    "duration" : 138
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e1acc49fa7001c83",
-  "name" : "Get recruiter profile",
+  "uid" : "50730ea94a1ae968",
+  "name" : "Refresh token",
   "time" : {
-    "start" : 1754280346707,
-    "stop" : 1754280347791,
-    "duration" : 1084
+    "start" : 1754280619568,
+    "stop" : 1754280619699,
+    "duration" : 131
   },
-  "status" : "failed",
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c430979f93a0f0b7",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754280619292,
+    "stop" : 1754280619422,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a121a04e07a84dab",
+  "name" : "Refresh token",
+  "time" : {
+    "start" : 1754280619426,
+    "stop" : 1754280619565,
+    "duration" : 139
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "caed0438ffeefcf3",
+  "name" : "Verify or continue - valid data",
+  "time" : {
+    "start" : 1754280618063,
+    "stop" : 1754280619014,
+    "duration" : 951
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4756a2278f0b6de5",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754280619158,
+    "stop" : 1754280619289,
+    "duration" : 131
+  },
+  "status" : "passed",
   "severity" : "normal"
 } ]

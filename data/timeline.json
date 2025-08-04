@@ -1,52 +1,91 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "3d8d1f57b78d",
+    "name" : "63dfb116ea87",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
-        "name" : "Get tariffs",
-        "uid" : "1c58f6f3c2155b35",
-        "parentUid" : "8db700a9910022950e60afc19c553dc7",
-        "status" : "failed",
-        "time" : {
-          "start" : 1754280348021,
-          "stop" : 1754280348201,
-          "duration" : 180
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "True" ]
-      }, {
-        "name" : "Get recruiter profile",
-        "uid" : "ca5cf3935984b82e",
-        "parentUid" : "8db700a9910022950e60afc19c553dc7",
+        "name" : "Refresh token",
+        "uid" : "a121a04e07a84dab",
+        "parentUid" : "b0b82e7cea9902af11f2cb65b0bdeee2",
         "status" : "passed",
         "time" : {
-          "start" : 1754280347831,
-          "stop" : 1754280348018,
-          "duration" : 187
+          "start" : 1754280619426,
+          "stop" : 1754280619565,
+          "duration" : 139
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "False", "0", "-1" ]
+        "parameters" : [ "True", "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY1NjU5MjB9.1KsIp2KDeYFSDsCAGeoPzRUDpP7Lk5xw0-D345Y3mfI'" ]
       }, {
-        "name" : "Get recruiter profile",
-        "uid" : "e1acc49fa7001c83",
-        "parentUid" : "8db700a9910022950e60afc19c553dc7",
-        "status" : "failed",
+        "name" : "Verify or continue - valid data",
+        "uid" : "caed0438ffeefcf3",
+        "parentUid" : "b0b82e7cea9902af11f2cb65b0bdeee2",
+        "status" : "passed",
         "time" : {
-          "start" : 1754280346707,
-          "stop" : 1754280347791,
-          "duration" : 1084
+          "start" : 1754280618063,
+          "stop" : 1754280619014,
+          "duration" : 951
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "True", "10", "0" ]
+        "parameters" : [ "True", "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}" ]
+      }, {
+        "name" : "Verify or continue - valid data",
+        "uid" : "e407ec5dfe47dfe9",
+        "parentUid" : "b0b82e7cea9902af11f2cb65b0bdeee2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280619017,
+          "stop" : 1754280619155,
+          "duration" : 138
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "True", "{'email': 'nonregitr@nonmail.ru', 'otp_code': '000000'}" ]
+      }, {
+        "name" : "Refresh token",
+        "uid" : "50730ea94a1ae968",
+        "parentUid" : "b0b82e7cea9902af11f2cb65b0bdeee2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280619568,
+          "stop" : 1754280619699,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "False", "'invalid_refresh_token'" ]
+      }, {
+        "name" : "Send OTP",
+        "uid" : "c430979f93a0f0b7",
+        "parentUid" : "b0b82e7cea9902af11f2cb65b0bdeee2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280619292,
+          "stop" : 1754280619422,
+          "duration" : 130
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'invalid-email'", "False" ]
+      }, {
+        "name" : "Send OTP",
+        "uid" : "4756a2278f0b6de5",
+        "parentUid" : "b0b82e7cea9902af11f2cb65b0bdeee2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1754280619158,
+          "stop" : 1754280619289,
+          "duration" : 131
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'freevoodoo@yandex.com'", "True" ]
       } ],
-      "uid" : "8db700a9910022950e60afc19c553dc7"
+      "uid" : "b0b82e7cea9902af11f2cb65b0bdeee2"
     } ],
-    "uid" : "b84b038ae6762f97b721f4972b8f1141"
+    "uid" : "e2076e83e2306404707cf8e001934049"
   } ],
   "name" : "timeline"
 }

@@ -1,56 +1,87 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "tests",
+    "name" : "tests.test_auth",
     "children" : [ {
-      "name" : "test_recruiters",
-      "children" : [ {
-        "name" : "Get recruiter profile",
-        "uid" : "e1acc49fa7001c83",
-        "parentUid" : "c7fd09039f6e325e05ac1ca1e5f3efe5",
-        "status" : "failed",
-        "time" : {
-          "start" : 1754280346707,
-          "stop" : 1754280347791,
-          "duration" : 1084
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "True", "10", "0" ]
-      }, {
-        "name" : "Get recruiter profile",
-        "uid" : "ca5cf3935984b82e",
-        "parentUid" : "c7fd09039f6e325e05ac1ca1e5f3efe5",
-        "status" : "passed",
-        "time" : {
-          "start" : 1754280347831,
-          "stop" : 1754280348018,
-          "duration" : 187
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "False", "0", "-1" ]
-      } ],
-      "uid" : "c7fd09039f6e325e05ac1ca1e5f3efe5"
+      "name" : "Verify or continue - valid data",
+      "uid" : "caed0438ffeefcf3",
+      "parentUid" : "3568597bd520ef3594a738bbba4d1464",
+      "status" : "passed",
+      "time" : {
+        "start" : 1754280618063,
+        "stop" : 1754280619014,
+        "duration" : 951
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "True", "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}" ]
     }, {
-      "name" : "test_subscription",
-      "children" : [ {
-        "name" : "Get tariffs",
-        "uid" : "1c58f6f3c2155b35",
-        "parentUid" : "8fb248e655781e6bf791470a670726a1",
-        "status" : "failed",
-        "time" : {
-          "start" : 1754280348021,
-          "stop" : 1754280348201,
-          "duration" : 180
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "True" ]
-      } ],
-      "uid" : "8fb248e655781e6bf791470a670726a1"
+      "name" : "Verify or continue - valid data",
+      "uid" : "e407ec5dfe47dfe9",
+      "parentUid" : "3568597bd520ef3594a738bbba4d1464",
+      "status" : "passed",
+      "time" : {
+        "start" : 1754280619017,
+        "stop" : 1754280619155,
+        "duration" : 138
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "True", "{'email': 'nonregitr@nonmail.ru', 'otp_code': '000000'}" ]
+    }, {
+      "name" : "Send OTP",
+      "uid" : "4756a2278f0b6de5",
+      "parentUid" : "3568597bd520ef3594a738bbba4d1464",
+      "status" : "passed",
+      "time" : {
+        "start" : 1754280619158,
+        "stop" : 1754280619289,
+        "duration" : 131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'freevoodoo@yandex.com'", "True" ]
+    }, {
+      "name" : "Send OTP",
+      "uid" : "c430979f93a0f0b7",
+      "parentUid" : "3568597bd520ef3594a738bbba4d1464",
+      "status" : "passed",
+      "time" : {
+        "start" : 1754280619292,
+        "stop" : 1754280619422,
+        "duration" : 130
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'invalid-email'", "False" ]
+    }, {
+      "name" : "Refresh token",
+      "uid" : "a121a04e07a84dab",
+      "parentUid" : "3568597bd520ef3594a738bbba4d1464",
+      "status" : "passed",
+      "time" : {
+        "start" : 1754280619426,
+        "stop" : 1754280619565,
+        "duration" : 139
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "True", "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY1NjU5MjB9.1KsIp2KDeYFSDsCAGeoPzRUDpP7Lk5xw0-D345Y3mfI'" ]
+    }, {
+      "name" : "Refresh token",
+      "uid" : "50730ea94a1ae968",
+      "parentUid" : "3568597bd520ef3594a738bbba4d1464",
+      "status" : "passed",
+      "time" : {
+        "start" : 1754280619568,
+        "stop" : 1754280619699,
+        "duration" : 131
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "False", "'invalid_refresh_token'" ]
     } ],
-    "uid" : "bf49149a3821e34f7608bb6885d52868"
+    "uid" : "tests.test_auth"
   } ],
   "name" : "packages"
 }

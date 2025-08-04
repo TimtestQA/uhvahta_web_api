@@ -1,43 +1,5 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ {
-    "name" : "Product defects",
-    "children" : [ {
-      "name" : "AssertionError: Expected success status, got 401: {\"detail\":\"Not authenticated\"}",
-      "children" : [ {
-        "name" : "Get recruiter profile",
-        "uid" : "e1acc49fa7001c83",
-        "parentUid" : "363a3e7e1f31962cc0f3b35fefc19ebe",
-        "status" : "failed",
-        "time" : {
-          "start" : 1754280346707,
-          "stop" : 1754280347791,
-          "duration" : 1084
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "True", "10", "0" ]
-      } ],
-      "uid" : "363a3e7e1f31962cc0f3b35fefc19ebe"
-    }, {
-      "name" : "AssertionError: Expected success status, got 404: {\"detail\":\"Not Found\"}",
-      "children" : [ {
-        "name" : "Get tariffs",
-        "uid" : "1c58f6f3c2155b35",
-        "parentUid" : "e439271f09d384626e80b942db568000",
-        "status" : "failed",
-        "time" : {
-          "start" : 1754280348021,
-          "stop" : 1754280348201,
-          "duration" : 180
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "True" ]
-      } ],
-      "uid" : "e439271f09d384626e80b942db568000"
-    } ],
-    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
-  } ],
+  "children" : [ ],
   "name" : "categories"
 }
