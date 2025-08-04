@@ -88,24 +88,15 @@ jobs:
           folder: allure-report
           clean: false
 
-      - name: 📁 Копируем старые логи
+      - name: Deploy Allure report to main
         run: |
-          mkdir -p logs/history
-          if [ -f "./logs/api_requests.log" ]; then
-            cp logs/api_requests.log logs/history/old_api_requests.log
-          fi
-
-      - name: 📦 Объединяем с новыми логами (опционально)
-        run: |
-          if [ -f logs/history/old_api_requests.log ]; then
-            cat logs/history/old_api_requests.log >> logs/api_requests.log
-          fi
-
-      - name: 🚀 Пушим логи в main
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          branch: main
-          folder: logs
-          target-folder: logs
-          token: ${{ secrets.GITHUB_TOKEN }}
-          clean: false
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions Bot"
+          git fetch origin
+          git checkout main
+          cp -r allure-report/* path/to/your/main/folder  # если нужно
+          git add path/to/your/main/folder
+          git commit -m "Add Allure report [skip ci]" || echo "No changes to commit"
+          git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
