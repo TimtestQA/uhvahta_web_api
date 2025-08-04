@@ -7,8 +7,12 @@ on:
       STAGE:
         description: 'Choose environment'
         required: true
-        default: 'stage'
+        default: 'STAGE'
         type: environment
+        options:
+          - STAGE
+          - PROD
+          - DEV
 
       MARKER:
         description: 'Marker for pytest'
