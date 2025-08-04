@@ -1,0 +1,1 @@
+[32mINFO    [0m api_logger:api_client.py:26 ➡️ GET - https://stage.uhvahta.ru/web/api/v1/recruiter/profile

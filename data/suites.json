@@ -3,91 +3,60 @@
   "children" : [ {
     "name" : "tests",
     "children" : [ {
-      "name" : "test_auth",
+      "name" : "test_recruiters",
       "children" : [ {
-        "name" : "TestAuth",
+        "name" : "TestRecruiters",
         "children" : [ {
-          "name" : "Verify or continue - valid data",
-          "uid" : "f34b6f4428010881",
-          "parentUid" : "21e7c4517b31176fa88806dd2aafbcce",
-          "status" : "passed",
+          "name" : "Get recruiter profile",
+          "uid" : "e1acc49fa7001c83",
+          "parentUid" : "acd51e8c37ce4a072f914b0f72f19483",
+          "status" : "failed",
           "time" : {
-            "start" : 1754279907652,
-            "stop" : 1754279909168,
-            "duration" : 1516
+            "start" : 1754280346707,
+            "stop" : 1754280347791,
+            "duration" : 1084
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "True", "{'email': 'freevoodoo@yandex.com', 'otp_code': '123456'}" ]
+          "parameters" : [ "True", "10", "0" ]
         }, {
-          "name" : "Verify or continue - valid data",
-          "uid" : "73048af652fb3847",
-          "parentUid" : "21e7c4517b31176fa88806dd2aafbcce",
+          "name" : "Get recruiter profile",
+          "uid" : "ca5cf3935984b82e",
+          "parentUid" : "acd51e8c37ce4a072f914b0f72f19483",
           "status" : "passed",
           "time" : {
-            "start" : 1754279909171,
-            "stop" : 1754279909364,
-            "duration" : 193
+            "start" : 1754280347831,
+            "stop" : 1754280348018,
+            "duration" : 187
           },
           "flaky" : false,
           "newFailed" : false,
-          "parameters" : [ "True", "{'email': 'nonregitr@nonmail.ru', 'otp_code': '000000'}" ]
-        }, {
-          "name" : "Send OTP",
-          "uid" : "c1578046acf930ad",
-          "parentUid" : "21e7c4517b31176fa88806dd2aafbcce",
-          "status" : "passed",
-          "time" : {
-            "start" : 1754279909367,
-            "stop" : 1754279909551,
-            "duration" : 184
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'freevoodoo@yandex.com'", "True" ]
-        }, {
-          "name" : "Send OTP",
-          "uid" : "d3f81c741be2c770",
-          "parentUid" : "21e7c4517b31176fa88806dd2aafbcce",
-          "status" : "passed",
-          "time" : {
-            "start" : 1754279909554,
-            "stop" : 1754279909739,
-            "duration" : 185
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "'invalid-email'", "False" ]
-        }, {
-          "name" : "Refresh token",
-          "uid" : "2bedfff8b3ff3a5f",
-          "parentUid" : "21e7c4517b31176fa88806dd2aafbcce",
-          "status" : "passed",
-          "time" : {
-            "start" : 1754279909742,
-            "stop" : 1754279909938,
-            "duration" : 196
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "True", "'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY1NjU5MjB9.1KsIp2KDeYFSDsCAGeoPzRUDpP7Lk5xw0-D345Y3mfI'" ]
-        }, {
-          "name" : "Refresh token",
-          "uid" : "b3369890a932ba8c",
-          "parentUid" : "21e7c4517b31176fa88806dd2aafbcce",
-          "status" : "passed",
-          "time" : {
-            "start" : 1754279909941,
-            "stop" : 1754279910126,
-            "duration" : 185
-          },
-          "flaky" : false,
-          "newFailed" : false,
-          "parameters" : [ "False", "'invalid_refresh_token'" ]
+          "parameters" : [ "False", "0", "-1" ]
         } ],
-        "uid" : "21e7c4517b31176fa88806dd2aafbcce"
+        "uid" : "acd51e8c37ce4a072f914b0f72f19483"
       } ],
-      "uid" : "2d60e98e08cb0ddbe5ae65b440a9833c"
+      "uid" : "53538810b75d34785730a2c958370bba"
+    }, {
+      "name" : "test_subscription",
+      "children" : [ {
+        "name" : "TestSubscription",
+        "children" : [ {
+          "name" : "Get tariffs",
+          "uid" : "1c58f6f3c2155b35",
+          "parentUid" : "41e468410c35dca01dad34932018ca14",
+          "status" : "failed",
+          "time" : {
+            "start" : 1754280348021,
+            "stop" : 1754280348201,
+            "duration" : 180
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "True" ]
+        } ],
+        "uid" : "41e468410c35dca01dad34932018ca14"
+      } ],
+      "uid" : "3777473c2572f784e96397d2e6b77c95"
     } ],
     "uid" : "e387fa4bb326b54ea8c19c2822aba374"
   } ],

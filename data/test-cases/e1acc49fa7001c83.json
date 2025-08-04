@@ -1,0 +1,175 @@
+{
+  "uid" : "e1acc49fa7001c83",
+  "name" : "Get recruiter profile",
+  "fullName" : "tests.test_recruiters.TestRecruiters#test_get_recruiter_profile",
+  "historyId" : "24db82570a3487a7413f1fcb0d0c69ca",
+  "time" : {
+    "start" : 1754280346707,
+    "stop" : 1754280347791,
+    "duration" : 1084
+  },
+  "description" : "Test to check the retrieval of recruiter profile information.",
+  "descriptionHtml" : "<p>Test to check the retrieval of recruiter profile information.</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Expected success status, got 401: {\"detail\":\"Not authenticated\"}",
+  "statusTrace" : "self = <test_recruiters.TestRecruiters object at 0x7f7e58fc3dd0>, offset = 0\nlimit = 10, expected = True\n\n    @allure.title(\"Get recruiter profile\")\n    @pytest.mark.parametrize(\"offset, limit, expected\", [\n        pytest.param(0, 10, True, id=\"valid params\"),\n        pytest.param(-1, 0, False, id=\"invalid params\"),\n    ])\n    @pytest.mark.smoke\n    @pytest.mark.recruiters\n    def test_get_recruiter_profile(self, offset, limit, expected):\n        \"\"\"Test to check the retrieval of recruiter profile information.\"\"\"\n>       response = self.recruiters_api.get_recruiter(offset=offset, limit=limit, success=expected)\n\ntests/test_recruiters.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/recruiters/api.py:25: in get_recruiter\n    response = self.client.get(\nclient/api_client.py:97: in get\n    response = self._request(\"get\", endpoint, params=params, headers=headers, success=success)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <client.api_client.RequestClient object at 0x7f7e58faa300>\nmethod = 'get', endpoint = '/api/v1/recruiter/profile', headers = {}\nsuccess = True, kwargs = {'params': {'limit': 10, 'offset': 0}}\nurl = 'https://stage.uhvahta.ru/web/api/v1/recruiter/profile'\nresponse = <Response [401]>\n\n    def _request(self, method, endpoint, headers=None, success=None, **kwargs) -> requests.Response:\n        url = f\"{self.base_url}{endpoint}\"\n        self._log_request(method, url, **kwargs)\n    \n        response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n    \n        if success is not None:\n            if success:\n>               assert 200 <= response.status_code < 400, f\"Expected success status, got {response.status_code}: {response.text}\"\nE               AssertionError: Expected success status, got 401: {\"detail\":\"Not authenticated\"}\n\nclient/api_client.py:63: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestRecruiters",
+    "time" : {
+      "start" : 1754280346707,
+      "stop" : 1754280346707,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754280346705,
+      "stop" : 1754280346706,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Test to check the retrieval of recruiter profile information.",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Expected success status, got 401: {\"detail\":\"Not authenticated\"}",
+    "statusTrace" : "self = <test_recruiters.TestRecruiters object at 0x7f7e58fc3dd0>, offset = 0\nlimit = 10, expected = True\n\n    @allure.title(\"Get recruiter profile\")\n    @pytest.mark.parametrize(\"offset, limit, expected\", [\n        pytest.param(0, 10, True, id=\"valid params\"),\n        pytest.param(-1, 0, False, id=\"invalid params\"),\n    ])\n    @pytest.mark.smoke\n    @pytest.mark.recruiters\n    def test_get_recruiter_profile(self, offset, limit, expected):\n        \"\"\"Test to check the retrieval of recruiter profile information.\"\"\"\n>       response = self.recruiters_api.get_recruiter(offset=offset, limit=limit, success=expected)\n\ntests/test_recruiters.py:22: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/recruiters/api.py:25: in get_recruiter\n    response = self.client.get(\nclient/api_client.py:97: in get\n    response = self._request(\"get\", endpoint, params=params, headers=headers, success=success)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <client.api_client.RequestClient object at 0x7f7e58faa300>\nmethod = 'get', endpoint = '/api/v1/recruiter/profile', headers = {}\nsuccess = True, kwargs = {'params': {'limit': 10, 'offset': 0}}\nurl = 'https://stage.uhvahta.ru/web/api/v1/recruiter/profile'\nresponse = <Response [401]>\n\n    def _request(self, method, endpoint, headers=None, success=None, **kwargs) -> requests.Response:\n        url = f\"{self.base_url}{endpoint}\"\n        self._log_request(method, url, **kwargs)\n    \n        response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n    \n        if success is not None:\n            if success:\n>               assert 200 <= response.status_code < 400, f\"Expected success status, got {response.status_code}: {response.text}\"\nE               AssertionError: Expected success status, got 401: {\"detail\":\"Not authenticated\"}\n\nclient/api_client.py:63: AssertionError",
+    "steps" : [ {
+      "name" : "Get recruiter profile",
+      "time" : {
+        "start" : 1754280346708,
+        "stop" : 1754280347790,
+        "duration" : 1082
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: Expected success status, got 401: {\"detail\":\"Not authenticated\"}\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/services/recruiters/api.py\", line 25, in get_recruiter\n    response = self.client.get(\n               ^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/client/api_client.py\", line 97, in get\n    response = self._request(\"get\", endpoint, params=params, headers=headers, success=success)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/client/api_client.py\", line 63, in _request\n    assert 200 <= response.status_code < 400, f\"Expected success status, got {response.status_code}: {response.text}\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "offset",
+        "value" : "0"
+      }, {
+        "name" : "limit",
+        "value" : "10"
+      }, {
+        "name" : "success",
+        "value" : "True"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "90415d28ebb263dd",
+      "name" : "log",
+      "source" : "90415d28ebb263dd.txt",
+      "type" : "text/plain",
+      "size" : 112
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestRecruiters::0",
+    "time" : {
+      "start" : 1754280347828,
+      "stop" : 1754280347829,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Recruiter Management"
+  }, {
+    "name" : "epic",
+    "value" : "Recruiters"
+  }, {
+    "name" : "tag",
+    "value" : "recruiters"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_recruiters"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRecruiters"
+  }, {
+    "name" : "host",
+    "value" : "3d8d1f57b78d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_recruiters"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "True"
+  }, {
+    "name" : "limit",
+    "value" : "10"
+  }, {
+    "name" : "offset",
+    "value" : "0"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smoke", "recruiters" ]
+  },
+  "source" : "e1acc49fa7001c83.json",
+  "parameterValues" : [ "True", "10", "0" ]
+}

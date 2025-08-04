@@ -1,0 +1,163 @@
+{
+  "uid" : "1c58f6f3c2155b35",
+  "name" : "Get tariffs",
+  "fullName" : "tests.test_subscription.TestSubscription#test_get_tariffs",
+  "historyId" : "59b85ac3e55a7d78180d2f7bce0014f3",
+  "time" : {
+    "start" : 1754280348021,
+    "stop" : 1754280348201,
+    "duration" : 180
+  },
+  "description" : "Test get tariffs endpoint.",
+  "descriptionHtml" : "<p>Test get tariffs endpoint.</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Expected success status, got 404: {\"detail\":\"Not Found\"}",
+  "statusTrace" : "self = <test_subscription.TestSubscription object at 0x7f7e58fc46b0>\nexpected = True\n\n    @allure.title(\"Get tariffs\")\n    @pytest.mark.parametrize(\"expected\", [\n        pytest.param(True, id=\"valid request\"),\n    ])\n    @pytest.mark.smoke\n    @pytest.mark.subscription\n    def test_get_tariffs(self, expected):\n        \"\"\"Test get tariffs endpoint.\"\"\"\n>       response = self.subscription_api.get_tariffs(success=expected)\n\ntests/test_subscription.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/subscription/api.py:22: in get_tariffs\n    response = self.client.get(\nclient/api_client.py:97: in get\n    response = self._request(\"get\", endpoint, params=params, headers=headers, success=success)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <client.api_client.RequestClient object at 0x7f7e58faa300>\nmethod = 'get', endpoint = 'None/api/v1/subscription/tariff', headers = {}\nsuccess = True, kwargs = {'params': None}\nurl = 'https://stage.uhvahta.ru/webNone/api/v1/subscription/tariff'\nresponse = <Response [404]>\n\n    def _request(self, method, endpoint, headers=None, success=None, **kwargs) -> requests.Response:\n        url = f\"{self.base_url}{endpoint}\"\n        self._log_request(method, url, **kwargs)\n    \n        response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n    \n        if success is not None:\n            if success:\n>               assert 200 <= response.status_code < 400, f\"Expected success status, got {response.status_code}: {response.text}\"\nE               AssertionError: Expected success status, got 404: {\"detail\":\"Not Found\"}\n\nclient/api_client.py:63: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754280346705,
+      "stop" : 1754280346706,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_xunit_setup_method_fixture_TestSubscription",
+    "time" : {
+      "start" : 1754280348020,
+      "stop" : 1754280348020,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Test get tariffs endpoint.",
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Expected success status, got 404: {\"detail\":\"Not Found\"}",
+    "statusTrace" : "self = <test_subscription.TestSubscription object at 0x7f7e58fc46b0>\nexpected = True\n\n    @allure.title(\"Get tariffs\")\n    @pytest.mark.parametrize(\"expected\", [\n        pytest.param(True, id=\"valid request\"),\n    ])\n    @pytest.mark.smoke\n    @pytest.mark.subscription\n    def test_get_tariffs(self, expected):\n        \"\"\"Test get tariffs endpoint.\"\"\"\n>       response = self.subscription_api.get_tariffs(success=expected)\n\ntests/test_subscription.py:18: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nservices/subscription/api.py:22: in get_tariffs\n    response = self.client.get(\nclient/api_client.py:97: in get\n    response = self._request(\"get\", endpoint, params=params, headers=headers, success=success)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <client.api_client.RequestClient object at 0x7f7e58faa300>\nmethod = 'get', endpoint = 'None/api/v1/subscription/tariff', headers = {}\nsuccess = True, kwargs = {'params': None}\nurl = 'https://stage.uhvahta.ru/webNone/api/v1/subscription/tariff'\nresponse = <Response [404]>\n\n    def _request(self, method, endpoint, headers=None, success=None, **kwargs) -> requests.Response:\n        url = f\"{self.base_url}{endpoint}\"\n        self._log_request(method, url, **kwargs)\n    \n        response = self.session.request(method=method, url=url, headers=headers, **kwargs)\n    \n        if success is not None:\n            if success:\n>               assert 200 <= response.status_code < 400, f\"Expected success status, got {response.status_code}: {response.text}\"\nE               AssertionError: Expected success status, got 404: {\"detail\":\"Not Found\"}\n\nclient/api_client.py:63: AssertionError",
+    "steps" : [ {
+      "name" : "Get tariffs",
+      "time" : {
+        "start" : 1754280348021,
+        "stop" : 1754280348201,
+        "duration" : 180
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: Expected success status, got 404: {\"detail\":\"Not Found\"}\n",
+      "statusTrace" : "  File \"/usr/local/lib/python3.12/site-packages/allure_commons/_allure.py\", line 192, in impl\n    return func(*a, **kw)\n           ^^^^^^^^^^^^^^\n  File \"/usr/workspace/services/subscription/api.py\", line 22, in get_tariffs\n    response = self.client.get(\n               ^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/client/api_client.py\", line 97, in get\n    response = self._request(\"get\", endpoint, params=params, headers=headers, success=success)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/workspace/client/api_client.py\", line 63, in _request\n    assert 200 <= response.status_code < 400, f\"Expected success status, got {response.status_code}: {response.text}\"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "success",
+        "value" : "True"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "639d203329b4d6cc",
+      "name" : "log",
+      "source" : "639d203329b4d6cc.txt",
+      "type" : "text/plain",
+      "size" : 118
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestSubscription::0",
+    "time" : {
+      "start" : 1754280348210,
+      "stop" : 1754280348210,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Subscription Management"
+  }, {
+    "name" : "epic",
+    "value" : "Subscription"
+  }, {
+    "name" : "tag",
+    "value" : "subscription"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_subscription"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestSubscription"
+  }, {
+    "name" : "host",
+    "value" : "3d8d1f57b78d"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_subscription"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "True"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smoke", "subscription" ]
+  },
+  "source" : "1c58f6f3c2155b35.json",
+  "parameterValues" : [ "True" ]
+}
