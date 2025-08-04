@@ -1,60 +1,60 @@
 [ {
-  "uid" : "6e95fdcbaed450be",
-  "name" : "Verify or continue - valid data",
-  "time" : {
-    "start" : 1754289515201,
-    "stop" : 1754289516155,
-    "duration" : 954
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "15f4cfe54e37b826",
+  "uid" : "160507b6c8ff974",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754289516801,
-    "stop" : 1754289516956,
-    "duration" : 155
+    "start" : 1754298315946,
+    "stop" : 1754298316143,
+    "duration" : 197
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e50076bc63933270",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754289516478,
-    "stop" : 1754289516635,
-    "duration" : 157
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "74259f294e13db5b",
+  "uid" : "c311912e5a12c18e",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754289516158,
-    "stop" : 1754289516319,
-    "duration" : 161
+    "start" : 1754298315128,
+    "stop" : 1754298315334,
+    "duration" : 206
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e902e6ed27e09740",
-  "name" : "Refresh token",
-  "time" : {
-    "start" : 1754289516638,
-    "stop" : 1754289516799,
-    "duration" : 161
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d6b3cb5252f40854",
+  "uid" : "a72abbefc52ed2e8",
   "name" : "Send OTP",
   "time" : {
-    "start" : 1754289516322,
-    "stop" : 1754289516475,
-    "duration" : 153
+    "start" : 1754298315537,
+    "stop" : 1754298315735,
+    "duration" : 198
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f963fc3e22c06ed8",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754298315337,
+    "stop" : 1754298315534,
+    "duration" : 197
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5b52d7d98b5950bc",
+  "name" : "Verify or continue - valid data",
+  "time" : {
+    "start" : 1754298313666,
+    "stop" : 1754298315125,
+    "duration" : 1459
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b861a8ad99ea4e0d",
+  "name" : "Refresh token",
+  "time" : {
+    "start" : 1754298315737,
+    "stop" : 1754298315944,
+    "duration" : 207
   },
   "status" : "passed",
   "severity" : "normal"
