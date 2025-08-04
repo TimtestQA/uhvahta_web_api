@@ -1,0 +1,10 @@
+[ {
+  "values" : [ "main" ],
+  "name" : "Branch"
+}, {
+  "values" : [ "0fc59bcfa511e434dcdd30b05a8b696b72c740f7" ],
+  "name" : "Commit"
+}, {
+  "values" : [ "" ],
+  "name" : "Stage"
+} ]
