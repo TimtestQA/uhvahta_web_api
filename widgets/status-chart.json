@@ -1,60 +1,60 @@
 [ {
-  "uid" : "6f83f7b651336dd7",
+  "uid" : "fb811464a6ae44f9",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754286192975,
-    "stop" : 1754286193172,
-    "duration" : 197
+    "start" : 1754287115088,
+    "stop" : 1754287115295,
+    "duration" : 207
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "70d7cee0dbb7a340",
+  "uid" : "89248b3d16ab677f",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754286191645,
-    "stop" : 1754286192404,
-    "duration" : 759
+    "start" : 1754287114565,
+    "stop" : 1754287114779,
+    "duration" : 214
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d496a9de12ddff32",
+  "uid" : "6afeaa9bae022a3e",
   "name" : "Send OTP",
   "time" : {
-    "start" : 1754286192602,
-    "stop" : 1754286192785,
-    "duration" : 183
+    "start" : 1754287114931,
+    "stop" : 1754287115085,
+    "duration" : 154
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1397a18e20d12ffc",
+  "uid" : "63a77793eb03ec28",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754286192407,
-    "stop" : 1754286192599,
-    "duration" : 192
+    "start" : 1754287113539,
+    "stop" : 1754287114562,
+    "duration" : 1023
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "def0d256953b6e69",
+  "uid" : "39816b4816690fd",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754287114782,
+    "stop" : 1754287114929,
+    "duration" : 147
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ed35aac5a2a85c13",
   "name" : "Refresh token",
   "time" : {
-    "start" : 1754286193175,
-    "stop" : 1754286193359,
-    "duration" : 184
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "561404953b894390",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754286192788,
-    "stop" : 1754286192973,
-    "duration" : 185
+    "start" : 1754287115298,
+    "stop" : 1754287115445,
+    "duration" : 147
   },
   "status" : "passed",
   "severity" : "normal"
