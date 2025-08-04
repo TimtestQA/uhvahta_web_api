@@ -63,12 +63,15 @@ jobs:
           docker compose up users-api-test
         
       - name: Commit and push logs
+        env:
+          GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
+          REPO: ${{ github.repository }}
         run: |
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add logs/api_requests.log
           git commit -m "Update logs [skip ci]" || echo "No changes to commit"
-          git push origin ${{ github.ref }}
+          git push https://x-access-token:${CI_TOKEN}@github.com/${REPO}.git HEAD:main
 
       - name: Copy Allure history
         run: |
