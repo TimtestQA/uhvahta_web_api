@@ -1,0 +1,200 @@
+{
+  "uid" : "de62775f6206896c",
+  "name" : "Send OTP",
+  "fullName" : "tests.test_auth.TestAuth#test_send_otp",
+  "historyId" : "6fefcbbb4c8183e7f968e319be8fe159",
+  "time" : {
+    "start" : 1754279443226,
+    "stop" : 1754279443356,
+    "duration" : 130
+  },
+  "description" : "Test send OTP endpoint.",
+  "descriptionHtml" : "<p>Test send OTP endpoint.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth",
+    "time" : {
+      "start" : 1754279443225,
+      "stop" : 1754279443225,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1754279441851,
+      "stop" : 1754279441852,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "Test send OTP endpoint.",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Send OTP",
+      "time" : {
+        "start" : 1754279443226,
+        "stop" : 1754279443356,
+        "duration" : 130
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "84f385a2ce16ad6a",
+        "name" : "request (json)",
+        "source" : "84f385a2ce16ad6a.json",
+        "type" : "application/json",
+        "size" : 32
+      } ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'invalid-email'"
+      }, {
+        "name" : "success",
+        "value" : "False"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "851d22e8e7a25a7",
+      "name" : "log",
+      "source" : "851d22e8e7a25a7.txt",
+      "type" : "text/plain",
+      "size" : 464
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "_xunit_setup_method_fixture_TestAuth::0",
+    "time" : {
+      "start" : 1754279443357,
+      "stop" : 1754279443357,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Authentication"
+  }, {
+    "name" : "epic",
+    "value" : "Auth"
+  }, {
+    "name" : "tag",
+    "value" : "auth"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_auth"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestAuth"
+  }, {
+    "name" : "host",
+    "value" : "d523c0c52daa"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_auth"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "email",
+    "value" : "'invalid-email'"
+  }, {
+    "name" : "expected",
+    "value" : "False"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 3,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 4
+      },
+      "items" : [ {
+        "uid" : "9c602f10cef7065b",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+        "time" : {
+          "start" : 1754278939744,
+          "stop" : 1754278939745,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "b36097c9595e797a",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+        "time" : {
+          "start" : 1754278243241,
+          "stop" : 1754278243242,
+          "duration" : 1
+        }
+      }, {
+        "uid" : "804276501e1f6f87",
+        "status" : "broken",
+        "statusDetails" : "requests.exceptions.MissingSchema: Invalid URL '/api/v1/auth/send-otp': No scheme supplied. Perhaps you meant https:///api/v1/auth/send-otp?",
+        "time" : {
+          "start" : 1754277805376,
+          "stop" : 1754277805378,
+          "duration" : 2
+        }
+      } ]
+    },
+    "tags" : [ "auth" ]
+  },
+  "source" : "de62775f6206896c.json",
+  "parameterValues" : [ "'invalid-email'", "False" ]
+}

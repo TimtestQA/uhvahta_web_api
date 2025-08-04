@@ -1,0 +1,3 @@
+[32mINFO    [0m api_logger:api_client.py:26 ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/verify-or-continue
+[32mINFO    [0m api_logger:api_client.py:46 ⬅️ Status: 200
+[32mINFO    [0m api_logger:api_client.py:51 Response: {'token_type': 'Bearer', 'access_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTQzNjU4NDJ9.J0IW7E2ZxwbFAQyhp1x_MJa5ypiHqiGVvIBPVkmGOSo', 'refresh_token': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGYyNzY3Mi1mYzIwLTQ3MmUtODM1Yi0wNjZjZWQ2ZDc0NTgiLCJleHAiOjE3NTY4NzE0NDJ9.cP137VLtZ9ciSlCkEL5ZZvnfAxN2FwGEMqvexDOPOtk', 'registered': True}

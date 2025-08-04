@@ -1,61 +1,61 @@
 [ {
-  "uid" : "9c602f10cef7065b",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754278939744,
-    "stop" : 1754278939745,
-    "duration" : 1
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "43950bf9368617f9",
-  "name" : "Send OTP",
-  "time" : {
-    "start" : 1754278939711,
-    "stop" : 1754278939712,
-    "duration" : 1
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "3d00c614e92e8a57",
-  "name" : "Refresh token",
-  "time" : {
-    "start" : 1754278939810,
-    "stop" : 1754278939811,
-    "duration" : 1
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "2e2ae49c68acd5c2",
-  "name" : "Refresh token",
-  "time" : {
-    "start" : 1754278939777,
-    "stop" : 1754278939779,
-    "duration" : 2
-  },
-  "status" : "broken",
-  "severity" : "normal"
-}, {
-  "uid" : "4a1f72dd5a65d086",
+  "uid" : "3fc651bbee38729",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754278939608,
-    "stop" : 1754278939611,
-    "duration" : 3
+    "start" : 1754279442891,
+    "stop" : 1754279443089,
+    "duration" : 198
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ee494aa3d3b58d9f",
+  "uid" : "eadda381eda50b1e",
+  "name" : "Refresh token",
+  "time" : {
+    "start" : 1754279443554,
+    "stop" : 1754279443684,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6223f5f36611454d",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754279443092,
+    "stop" : 1754279443223,
+    "duration" : 131
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "de62775f6206896c",
+  "name" : "Send OTP",
+  "time" : {
+    "start" : 1754279443226,
+    "stop" : 1754279443356,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1896990ea13fe895",
+  "name" : "Refresh token",
+  "time" : {
+    "start" : 1754279443359,
+    "stop" : 1754279443551,
+    "duration" : 192
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a8304b4fd892f6a3",
   "name" : "Verify or continue - valid data",
   "time" : {
-    "start" : 1754278939677,
-    "stop" : 1754278939678,
-    "duration" : 1
+    "start" : 1754279441853,
+    "stop" : 1754279442888,
+    "duration" : 1035
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 } ]

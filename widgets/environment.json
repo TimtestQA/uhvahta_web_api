@@ -2,9 +2,9 @@
   "values" : [ "main" ],
   "name" : "Branch"
 }, {
-  "values" : [ "dc31c14edb84af7055baf6c5e3ef6ae15aa83c78" ],
+  "values" : [ "e70fe10e016ecb4ac6abb8ea8ed638d43d9598a1" ],
   "name" : "Commit"
 }, {
-  "values" : [ "" ],
+  "values" : [ "https://stage.uhvahta.ru/web" ],
   "name" : "Stage"
 } ]

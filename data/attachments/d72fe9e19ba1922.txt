@@ -1,0 +1,3 @@
+[32mINFO    [0m api_logger:api_client.py:26 ➡️ POST - https://stage.uhvahta.ru/web/api/v1/auth/send-otp
+[32mINFO    [0m api_logger:api_client.py:46 ⬅️ Status: 204
+[32mINFO    [0m api_logger:api_client.py:49 Response: No Content (204)
