@@ -19,3 +19,11 @@ TOKENS = {
     "admin": os.getenv("ADMIN_TOKEN"),
     "moderator": os.getenv("MODERATOR_TOKEN"),
     "guest": os.getenv("GUEST_TOKEN")}
+
+
+class Credentials:
+
+    # Bot settings
+    BOT_TOKEN = os.getenv("TG_BOT_TOKEN")
+    BOT_ID = os.getenv("TG_CHAT_ID")
+    PAGES_URL = os.getenv("GH_PAGES_URL")
