@@ -16,6 +16,9 @@ services:
     environment:
       HOST_URL: ${HOST_URL}
       MARKER: ${MARKER:-auth}
+      TG_BOT_TOKEN: ${TG_BOT_TOKEN}
+      TG_CHAT_ID: ${TG_CHAT_ID}
+      GH_PAGES_URL: ${GH_PAGES_URL}
     tty: true
 
   report:
