@@ -37,7 +37,7 @@ on:
 jobs:
   api-tests:
     runs-on: ubuntu-latest
-    environment: ${{ inputs.ENV }}
+    environment: ${{ github.event.inputs.STAGE }}
 
     steps:
       - uses: actions/checkout@v3
@@ -62,7 +62,6 @@ jobs:
         run: |
           docker compose up users-api-test
         
-    
 
       - name: Copy Allure history
         run: |
@@ -87,4 +86,26 @@ jobs:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-report
+          clean: false
+
+      - name: 📁 Копируем старые логи
+        run: |
+          mkdir -p logs/history
+          if [ -f "./logs/api_requests.log" ]; then
+            cp logs/api_requests.log logs/history/old_api_requests.log
+          fi
+
+      - name: 📦 Объединяем с новыми логами (опционально)
+        run: |
+          if [ -f logs/history/old_api_requests.log ]; then
+            cat logs/history/old_api_requests.log >> logs/api_requests.log
+          fi
+
+      - name: 🚀 Пушим логи в main
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          branch: main
+          folder: logs
+          target-folder: logs
+          token: ${{ secrets.GITHUB_TOKEN }}
           clean: false
