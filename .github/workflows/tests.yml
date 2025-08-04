@@ -68,19 +68,7 @@ jobs:
         run: |
           docker compose up users-api-test
 
-      - name: Push API logs to gh-pages
-        run: |
-          git config --global user.name "GitHub Action"
-          git config --global user.email "actions@github.com"
-          mkdir -p ./.github/gh-pages/logs
-          cp logs/api_requests.log ./.github/gh-pages/logs/api_requests.log
-          cd ./.github/gh-pages
-          git init
-          git remote add origin https://x-access-token:${{ secrets.CI_TOKEN }}@github.com/TimtestQA/uhvahta_web_api.git
-          git checkout -b gh-pages
-          git add logs/api_requests.log
-          git commit -m "Update API logs [skip ci]" || echo "No changes"
-          git push origin gh-pages
+     
 
       - name: Copy Allure history
         run: |
