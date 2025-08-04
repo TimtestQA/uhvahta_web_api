@@ -67,7 +67,6 @@ jobs:
           GH_PAGES_URL: ${{ secrets.GH_PAGES_URL }}
         run: |
           docker compose up users-api-test
-
      
 
       - name: Copy Allure history
