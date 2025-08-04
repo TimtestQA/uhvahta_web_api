@@ -88,15 +88,19 @@ jobs:
           folder: allure-report
           clean: false
 
-      - name: Deploy Allure report to main
+      - name: Copy logs from Docker container
         run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions Bot"
-          git fetch origin
+          mkdir -p logs/history/$(date +'%Y-%m-%d_%H-%M-%S')
+          docker cp $(docker ps -aqf "name=users-api-test"):/app/logs ./logs/history/$(date +'%Y-%m-%d_%H-%M-%S')
+
+      - name: Commit and push logs to main
+        run: |
+          git fetch origin main
           git checkout main
-          cp -r allure-report/* path/to/your/main/folder  # если нужно
-          git add path/to/your/main/folder
-          git commit -m "Add Allure report [skip ci]" || echo "No changes to commit"
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git add logs/history
+          git commit -m "Add logs from ${{ github.sha }} [skip ci]" || echo "No changes to commit"
           git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
