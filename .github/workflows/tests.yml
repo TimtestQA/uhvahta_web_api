@@ -68,25 +68,6 @@ jobs:
         run: |
           docker compose up users-api-test
 
-      - name: 📁 Копируем старые логи
-        run: |
-          mkdir -p logs/history
-          if [ -f "./.github/gh-pages/logs/api_requests.log" ]; then
-            cp ./.github/gh-pages/logs/api_requests.log logs/history/
-          fi
-      - name: 📦 Готовим новые логи
-        run: |
-          
-          cat logs/history/api_requests.log >> logs/api_requests.log || true
-      - name: 🚀 Заливаем логи на GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.5
-        with:
-          token: ${{ secrets.CI_TOKEN }}
-          branch: gh-pages
-          folder: logs
-          target-folder: logs
-          clean: false
-
       - name: Copy Allure history
         run: |
           mkdir -p allure-results/history
@@ -108,4 +89,22 @@ jobs:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-report
+          clean: false
+      - name: 📁 Копируем старые логи
+        run: |
+          mkdir -p logs/history
+          if [ -f "./.github/gh-pages/logs/api_requests.log" ]; then
+            cp ./.github/gh-pages/logs/api_requests.log logs/history/
+          fi
+      - name: 📦 Готовим новые логи
+        run: |
+
+          cat logs/history/api_requests.log >> logs/api_requests.log || true
+      - name: 🚀 Заливаем логи на GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.5
+        with:
+          token: ${{ secrets.CI_TOKEN }}
+          branch: gh-pages
+          folder: logs
+          target-folder: logs
           clean: false
