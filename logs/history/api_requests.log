@@ -1,3 +1,8 @@
+2025-08-04 04:05:46,707 - api_logger - INFO - ➡️ GET - https://stage.uhvahta.ru/web/api/v1/recruiter/profile
+2025-08-04 04:05:47,830 - api_logger - INFO - ➡️ GET - https://stage.uhvahta.ru/web/api/v1/recruiter/profile
+2025-08-04 04:05:48,017 - api_logger - INFO - ⬅️ Status: 401
+2025-08-04 04:05:48,017 - api_logger - INFO - Response: {'detail': 'Not authenticated'}
+2025-08-04 04:05:48,020 - api_logger - INFO - ➡️ GET - https://stage.uhvahta.ru/webNone/api/v1/subscription/tariff
 2025-08-04 03:30:43,105 - api_logger - INFO - ➡️ POST - /api/v1/auth/verify-or-continue
 2025-08-04 03:30:43,172 - api_logger - INFO - ➡️ POST - /api/v1/auth/verify-or-continue
 2025-08-04 03:30:43,206 - api_logger - INFO - ➡️ POST - /api/v1/auth/send-otp
